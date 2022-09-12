@@ -1,0 +1,144 @@
+html{
+    height: 100vh;
+    padding-top: 10px;
+    background-color: black;
+    font-family: Lato, sans-serif;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container{
+    width: 100%;
+    height: 70px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 60px;
+}
+
+.calculator-container{
+    width: 450px;
+    height: 680px;
+    padding: 14px;
+    background-color: #99c9ff;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+.input {
+    grid-column: 1 / -1;
+    height: 65px;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px; 
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    word-break: break-all;
+    text-align: right;
+    background-color: #0a0a23;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: -1px 2px 1px 1px whitesmoke;
+    border-radius: 10px;
+}
+
+.row{
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(6,1fr);
+}
+
+.btn-op{
+    height: 83px;
+    width: 64px;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #1b1b32;
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-op:hover{
+    background-color: #29294a;
+}
+
+.btn-equal{
+    grid-column: span 2;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: rgb(7, 80, 7);
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-equal:hover{
+    background-color: rgb(14, 91, 14);
+}
+
+.btn-ac{
+    height: 83px;
+    width: 64px;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 34px;
+    background-color: rgb(108, 16, 16);
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-ac:hover{
+    background-color: rgb(110, 48, 48);
+}
+
+.btn-num{
+    height: 83px;
+    width: 64px;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #47475c;
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-num:hover{
+    background-color: #535365;
+}

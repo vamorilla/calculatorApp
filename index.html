@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo" src="/images/logoVM.png" alt="Logo">
+        </div>
+        <div class="calculator-container">
+            <div class="input">
+                <div id="last-input"></div>
+                <div id="current-input"></div>
+            </div>
+            
+            <div class="row">
+                <button class="btn-op operador">(</button>
+                <button class="btn-op operador">)</button>
+                <button class="btn-op operador">x!</button>
+                <button class="btn-op operador">x2</button>
+                <button class="btn-op operador">√</button>
+                <button class="btn-op operador">√ⁿ</button>
+            </div>
+            <div class="row">
+                <button class="btn-op operador">sin</button>
+                <button class="btn-op operador">cos</button>
+                <button class="btn-op operador">tan</button>
+                <button class="btn-op operador">x³</button>
+                <button class="btn-op operador">√³</button>
+                <button class="btn-op operador">xⁿ</button>
+            </div>
+            <div class="row">
+                <button class="btn-num">1</button>
+                <button class="btn-num">2</button>
+                <button class="btn-num">3</button>
+                <button class="btn-op operador" value="dividir">/</button>
+                <button class="btn-op operador">%</button>
+                <button class="btn-op operador">In</button>
+            </div>
+            <div class="row">
+                <button class="btn-num">4</button>
+                <button class="btn-num">5</button>
+                <button class="btn-num">6</button>
+                <button class="btn-op operador" value="multiplicar">*</button>
+                <button class="btn-op operador">log</button>
+                <button class="btn-op operador">e</button>
+            </div>
+            <div class="row">
+                <button class="btn-num">7</button>
+                <button class="btn-num">8</button>
+                <button class="btn-num">9</button>
+                <button class="btn-op operador" value="restar">-</button>
+                <button onclick="display.delete()" class="btn-ac">AC</button>
+                <button class="btn-op operador">MR</button>
+            </div>
+            <div class="row">
+                <button class="btn-num">.</button>
+                <button class="btn-num">0</button>
+                <button class="btn-op operador">π</button>
+                <button class="btn-op operador" value="sumar">+</button>
+                <button class="btn-equal operador" value="igual">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Display.js"></script>
+    <script src="/Calculadora.js"></script>
+    <script src="/script.js"></script>   
+</body>
+</html>
